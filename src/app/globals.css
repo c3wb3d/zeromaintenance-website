@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-ink font-body text-[17px] leading-relaxed text-text antialiased;
+}
+
+h1,
+h2,
+h3 {
+  @apply font-display font-bold tracking-[-0.02em];
+}
+
+a {
+  @apply text-inherit no-underline;
+}
