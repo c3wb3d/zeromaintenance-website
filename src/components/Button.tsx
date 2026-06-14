@@ -12,9 +12,9 @@ type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
 
 const variantClasses: Record<ButtonVariant, string> = {
   primary:
-    "bg-green text-[#06140C] hover:bg-green-deep border-transparent",
+    "bg-green text-ink hover:bg-green-deep border-transparent",
   ghost:
-    "bg-transparent border-line-2 text-text hover:bg-ink-2",
+    "bg-transparent border-line-2 text-text hover:bg-ink-2 hover:border-line-2",
 };
 
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(

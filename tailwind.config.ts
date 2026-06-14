@@ -9,21 +9,21 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        ink: "#0B0F0D",
-        "ink-2": "#121714",
-        surface: "#161C18",
+        ink: "var(--color-ink)",
+        "ink-2": "#0C0C0C",
+        surface: "#141414",
         text: "#F2F5F1",
         muted: "#9DA89F",
         green: {
-          DEFAULT: "#34C77B",
-          deep: "#2BA866",
+          DEFAULT: "var(--color-green)",
+          deep: "var(--color-green-deep)",
         },
         amber: {
           DEFAULT: "#E8B04B",
         },
-        line: "rgba(255,255,255,0.09)",
-        "line-2": "rgba(255,255,255,0.16)",
-        "cta-muted": "#A9C6B5",
+        line: "rgba(255,255,255,0.10)",
+        "line-2": "rgba(255,255,255,0.17)",
+        "cta-muted": "#9BB5A8",
         "before-accent": "#C9A47A",
       },
       fontFamily: {

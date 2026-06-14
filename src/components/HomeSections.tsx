@@ -47,7 +47,7 @@ export function Hero() {
         className="pointer-events-none absolute inset-x-0 bottom-[-40%] h-[60%]"
         style={{
           background:
-            "radial-gradient(60% 100% at 50% 0, rgba(52,199,123,0.10), transparent 70%)",
+            "radial-gradient(60% 100% at 50% 0, rgba(47,167,104,0.08), transparent 70%)",
         }}
       />
       <Container>
@@ -279,7 +279,7 @@ export function QuoteCTA() {
   return (
     <section id="quote" className="py-[88px]">
       <Container>
-        <div className="rounded-cta border border-line-2 bg-gradient-to-br from-[#10301f] to-[#0c2418] px-8 py-14 text-center">
+        <div className="rounded-cta border border-line-2 bg-gradient-to-br from-surface to-ink-2 px-8 py-14 text-center">
           <h2 className="mb-3.5 font-display text-[clamp(28px,4vw,42px)] font-bold leading-[1.05] tracking-[-0.02em]">
             Got something that needs to go?
           </h2>

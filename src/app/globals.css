@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --color-ink: #000000;
+  --color-green: #2fa768;
+  --color-green-deep: #279659;
+}
+
 html {
   scroll-behavior: smooth;
 }

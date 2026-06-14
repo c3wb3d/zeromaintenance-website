@@ -73,6 +73,20 @@ export function Footer() {
         <p className="mt-8 border-t border-line pt-5 text-[13px] text-muted">
           © 2026 {SITE.name} · {SITE.domain}
         </p>
+
+        <div className="mt-4 flex items-center justify-center gap-2 opacity-55 transition-opacity hover:opacity-100">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/zerocorps-logo.webp"
+            alt="ZeroCorps"
+            className="h-[22px] w-auto"
+          />
+          <span className="text-[12px]">
+            <span className="text-muted">Powered by </span>
+            <span className="text-green">Zero</span>
+            <span className="text-text">Corps</span>
+          </span>
+        </div>
       </Container>
     </footer>
   );

@@ -151,4 +151,4 @@ function Field({
 }
 
 const inputClass =
-  "w-full rounded-xl border border-line-2 bg-ink px-4 py-3 text-[15px] text-text outline-none transition placeholder:text-muted/70 focus:border-green/50";
+  "w-full rounded-xl border border-line-2 bg-surface px-4 py-3 text-[15px] text-text outline-none transition placeholder:text-muted/70 focus:border-green/50";
