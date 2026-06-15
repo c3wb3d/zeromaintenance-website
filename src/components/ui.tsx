@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { ReactNode } from "react";
 
@@ -39,13 +40,14 @@ export function SectionHead({
 
 export function Logo({ className }: { className?: string }) {
   return (
-    <div
+    <Link
+      href="/"
       className={cn(
         "font-display text-[22px] font-extrabold tracking-[-0.02em]",
         className,
       )}
     >
       Zero<span className="text-green">Maintenance</span>
-    </div>
+    </Link>
   );
 }
