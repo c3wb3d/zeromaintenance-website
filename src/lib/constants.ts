@@ -10,17 +10,15 @@ export const SITE = {
 } as const;
 
 export const NAV_LINKS = [
-  { href: "/#work", label: "Our work" },
   { href: "/#how", label: "How it works" },
   { href: "/#services", label: "Services" },
-  { href: "/#reviews", label: "Reviews" },
   { href: "/#contact", label: "Contact" },
 ] as const;
 
 export const TRUST_ITEMS = [
   { icon: "camera" as const, label: "Upfront photo quotes" },
   { icon: "zap" as const, label: "Same-day service" },
-  { icon: "truck" as const, label: "2 trucks, 2 trailers" },
+  { icon: "truck" as const, label: "Trailer-equipped hauling" },
 ] as const;
 
 export const STEPS = [
@@ -86,30 +84,5 @@ export const ADDITIONAL_SERVICES = [
     icon: "droplets" as const,
     title: "Pressure washing",
     description: "Driveways, siding, patios, and fences — grime gone, property refreshed.",
-  },
-] as const;
-
-// TODO: replace with real reviews (names + quotes only)
-export const REVIEWS = [
-  {
-    initials: "JD",
-    quote:
-      "Quoted me from a photo, showed up the same day, and the garage was empty in an hour. Easiest thing I've done all month.",
-    name: "[ real name ]",
-    location: "Decatur, TX",
-  },
-  {
-    initials: "MR",
-    quote:
-      "Fair price, no surprises, and they cleaned up after. You can tell they actually care how it looks when they leave.",
-    name: "[ real name ]",
-    location: "Denton, TX",
-  },
-  {
-    initials: "TS",
-    quote:
-      "Texted a picture of a pile of old fence boards at 9am, gone by lunch. These guys move.",
-    name: "[ real name ]",
-    location: "Fort Worth, TX",
   },
 ] as const;

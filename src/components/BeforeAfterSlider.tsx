@@ -4,16 +4,11 @@ import { useCallback, useState } from "react";
 import { ChevronsLeftRight } from "lucide-react";
 
 type BeforeAfterSliderProps = {
-  beforeLabel?: string;
-  afterLabel?: string;
-  // TODO: swap placeholders for real job photo URLs
   beforeImage?: string;
   afterImage?: string;
 };
 
 export function BeforeAfterSlider({
-  beforeLabel = "[ before photo ]",
-  afterLabel = "[ after photo ]",
   beforeImage,
   afterImage,
 }: BeforeAfterSliderProps) {
@@ -41,11 +36,10 @@ export function BeforeAfterSlider({
               : undefined
           }
         >
-          {!afterImage ? afterLabel : null}
         </div>
 
         <div
-          className="absolute inset-0 grid place-items-center bg-gradient-to-br from-[#2a2520] to-[#1a1714] font-display text-[clamp(20px,3vw,30px)] font-bold text-before-accent"
+          className="absolute inset-0 bg-gradient-to-br from-[#2a2520] to-[#1a1714]"
           style={{
             clipPath: `inset(0 ${100 - value}% 0 0)`,
             ...(beforeImage
@@ -57,7 +51,6 @@ export function BeforeAfterSlider({
               : {}),
           }}
         >
-          {!beforeImage ? beforeLabel : null}
         </div>
 
         <span className="absolute left-4 top-4 rounded-full bg-black/45 px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.06em] text-before-accent">
@@ -89,9 +82,6 @@ export function BeforeAfterSlider({
           className="absolute inset-0 z-[5] m-0 h-full w-full cursor-ew-resize opacity-0"
         />
       </div>
-      <p className="mt-4 text-center text-sm text-muted">
-        Swap these for real job photos — the transformation is the whole pitch.
-      </p>
     </div>
   );
 }

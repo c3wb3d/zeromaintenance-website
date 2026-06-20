@@ -2,12 +2,10 @@ import {
   Camera,
   Check,
   Droplets,
-  Image,
   MapPin,
   MessageSquare,
   Sparkles,
   Sprout,
-  Star,
   Trash2,
   Truck,
   Zap,
@@ -17,13 +15,11 @@ import {
   ADDITIONAL_SERVICES,
   FEATURED_SERVICE,
   JUNK_SERVICE,
-  REVIEWS,
   SITE,
   STEPS,
   TRUST_ITEMS,
   type ServiceIcon,
 } from "@/lib/constants";
-import { BeforeAfterSlider } from "@/components/BeforeAfterSlider";
 import { Button } from "@/components/Button";
 import { Container, SectionHead } from "@/components/ui";
 
@@ -67,9 +63,9 @@ export function Hero() {
             <MessageSquare className="h-5 w-5" strokeWidth={1.8} />
             Tell us about the job
           </Button>
-          <Button href="#work" variant="ghost">
-            <Image className="h-5 w-5" strokeWidth={1.8} />
-            See our work
+          <Button href="/#services" variant="ghost">
+            <Sprout className="h-5 w-5" strokeWidth={1.8} />
+            See our services
           </Button>
         </div>
 
@@ -89,21 +85,6 @@ export function Hero() {
             );
           })}
         </div>
-      </Container>
-    </section>
-  );
-}
-
-export function WorkSection() {
-  return (
-    <section id="work" className="py-[88px]">
-      <Container>
-        <SectionHead
-          label="Our work"
-          title="The proof is in the before & after"
-          description="Drag to see the difference. This is what we mean by handled."
-        />
-        <BeforeAfterSlider />
       </Container>
     </section>
   );
@@ -222,53 +203,6 @@ export function ServicesSection() {
               );
             })}
           </div>
-        </div>
-      </Container>
-    </section>
-  );
-}
-
-export function ReviewsSection() {
-  return (
-    <section
-      id="reviews"
-      className="border-y border-line bg-ink-2 py-[88px]"
-    >
-      <Container>
-        <SectionHead
-          label="Reviews"
-          title="What neighbors are saying"
-          description="Replace with real reviews as they come in — real names, real words only."
-        />
-        <div className="grid gap-5 md:grid-cols-3">
-          {REVIEWS.map((review) => (
-            <div
-              key={review.initials}
-              className="rounded-card border border-line bg-ink-2 p-[26px]"
-            >
-              <div className="mb-3.5 flex gap-0.5 text-amber">
-                {Array.from({ length: 5 }).map((_, i) => (
-                  <Star
-                    key={i}
-                    className="h-[17px] w-[17px] fill-amber text-amber"
-                    strokeWidth={1.8}
-                  />
-                ))}
-              </div>
-              <p className="mb-[18px] text-base">{review.quote}</p>
-              <div className="flex items-center gap-3">
-                <div className="grid h-[38px] w-[38px] place-items-center rounded-full bg-green/15 text-sm font-semibold text-green">
-                  {review.initials}
-                </div>
-                <div>
-                  <strong className="block">{review.name}</strong>
-                  <small className="text-[13px] text-muted">
-                    {review.location}
-                  </small>
-                </div>
-              </div>
-            </div>
-          ))}
         </div>
       </Container>
     </section>
